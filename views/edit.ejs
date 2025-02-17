@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #text-box {
+            width: 500px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Edit Your Khataa-book</h2>
+    <form action="/save/<%= date %>" method="post" enctype="application/x-www-form-urlencoded">
+        <textarea name="text" id="text-box"><%= data %></textarea>
+        <button type="submit">save</button>
+    </form>
+</body>
+</html>
